@@ -23,7 +23,7 @@ export class HomepageComponent implements AfterViewInit {
     labels: []
 };
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   ngAfterViewInit(): void {
     this.http.get('http://localhost:3000/budget')
